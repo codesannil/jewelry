@@ -21,9 +21,6 @@ export function renderHomeView(container) {
         <p class="hero-desc">Discover exquisite handcrafted gold, diamond, and silver jewelry collections from our physical store. Explore our latest designs and contact us directly on WhatsApp for availability and inquiries.</p>
         <div class="hero-btn-group">
           <a href="#catalogue" class="btn btn-gold btn-lg">Explore Catalogue</a>
-          <a href="${getGeneralWhatsAppUrl()}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
-            <span>WhatsApp Us</span>
-          </a>
         </div>
 
         <div class="hero-features-bar">
