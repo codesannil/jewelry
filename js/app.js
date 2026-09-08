@@ -27,29 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const router = new Router(routes, 'home');
   router.init();
 
-  // Initialize Mobile Drawer Navigation
-  const drawerToggle = document.getElementById('mobile-drawer-toggle');
-  const drawerClose = document.getElementById('mobile-drawer-close');
-  const drawer = document.getElementById('mobile-drawer');
-  const overlay = document.getElementById('drawer-overlay');
-
-  const openDrawer = () => {
-    if (drawer && overlay) {
-      drawer.classList.add('open');
-      overlay.classList.add('open');
-    }
-  };
-
-  const closeDrawer = () => {
-    if (drawer && overlay) {
-      drawer.classList.remove('open');
-      overlay.classList.remove('open');
-    }
-  };
-
-  if (drawerToggle) drawerToggle.addEventListener('click', openDrawer);
-  if (drawerClose) drawerClose.addEventListener('click', closeDrawer);
-  if (overlay) overlay.addEventListener('click', closeDrawer);
 
   // Set floating & sticky WhatsApp links
   const floatingWa = document.getElementById('floating-whatsapp-btn');

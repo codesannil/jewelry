@@ -60,13 +60,6 @@ export class Router {
       }
     });
 
-    // Close mobile drawer if open
-    const drawer = document.getElementById('mobile-drawer');
-    const overlay = document.getElementById('drawer-overlay');
-    if (drawer && drawer.classList.contains('open')) {
-      drawer.classList.remove('open');
-      overlay.classList.remove('open');
-    }
   }
 
   navigate(route, params = {}) {

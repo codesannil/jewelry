@@ -134,10 +134,19 @@
 }
 
 /* Media Queries for Mobile Screens */
-@media (max-width: 768px) {
-  .nav-links { display: none; }
-  .mobile-toggle-btn { display: block; }
-  .sticky-mobile-bar { display: block; }
+  .nav-links {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 4px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .nav-links::-webkit-scrollbar { display: none; }
+  .nav-link {
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
 
   /* Adjust page padding for sticky bottom bar */
   body { padding-bottom: 70px; }
