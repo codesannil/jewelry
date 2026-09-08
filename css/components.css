@@ -133,11 +133,11 @@
 .category-name { font-size: 1.2rem; color: var(--text-primary); margin-bottom: 2px; }
 .category-count { font-size: 0.8rem; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 1px; }
 
-/* Product Cards Grid */
+/* Product Cards Grid - Strictly 3 Columns Across All Viewports */
 .products-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 }
 
 .product-card {

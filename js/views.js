@@ -300,10 +300,10 @@ function renderMiniProductCard(p) {
         </div>
       </div>
       <div class="product-card-actions">
-        <a href="${getProductWhatsAppUrl(p)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm flex-1">
-          <span>Ask on WhatsApp</span>
+        <a href="${getProductWhatsAppUrl(p)}" target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm flex-1" title="Ask on WhatsApp">
+          <span>Ask</span>
         </a>
-        <a href="#product?id=${p.id}" class="btn btn-outline-gold btn-sm">Details</a>
+        <a href="#product?id=${p.id}" class="btn btn-outline-gold btn-sm" title="View details">View</a>
         <button class="btn btn-compare-icon ${inCompare ? 'active' : ''}" data-compare-id="${p.id}" title="Compare">
           ⚖️
         </button>
