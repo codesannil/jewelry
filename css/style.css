@@ -258,6 +258,15 @@ h1, h2, h3, h4, .serif-font {
   color: var(--text-primary);
 }
 
+.brand-subtitle {
+  font-size: 0.65rem;
+  display: block;
+  color: var(--gold-primary);
+  letter-spacing: 2px;
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+
 .brand-logo-icon {
   width: 32px;
   height: 32px;
@@ -331,11 +340,7 @@ h1, h2, h3, h4, .serif-font {
   display: flex;
 }
 
-.mobile-toggle-btn {
-  display: none;
-  font-size: 1.4rem;
-  color: var(--gold-primary);
-}
+
 
 /* Footer */
 .site-footer {
