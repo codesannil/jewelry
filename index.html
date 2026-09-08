@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Aurelia Fine Jewelry | Digital Catalogue & Showroom</title>
+  <meta name="description" content="Explore handcrafted 22K gold, certified diamond, and sterling silver jewelry from Aurelia Fine Jewelry. Browse our digital catalogue and inquire on WhatsApp for offline store visits." />
+  
+  <!-- Favicon & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/mobile.css" />
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <span class="brand-logo-icon">👑</span>
+        <span>AURELIA <small style="font-size: 0.65rem; display: block; color: var(--gold-primary); letter-spacing: 2px; font-family: var(--font-sans);">FINE JEWELRY</small></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link" data-route="home">Home</a></li>
+          <li><a href="#catalogue" class="nav-link" data-route="catalogue">Catalogue</a></li>
+          <li><a href="#new-arrivals" class="nav-link" data-route="new-arrivals">New Arrivals</a></li>
+          <li><a href="#compare" class="nav-link" data-route="compare">Compare</a></li>
+          <li><a href="#about" class="nav-link" data-route="about">About Us</a></li>
+          <li><a href="#contact" class="nav-link" data-route="contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <a href="#compare" class="compare-nav-badge" title="Compare products">
+          ⚖️ <span class="compare-badge-count">0</span>
+        </a>
+        <a href="#catalogue" class="btn btn-outline-gold btn-sm d-none-mobile">Browse Showcase</a>
+        <button id="mobile-drawer-toggle" class="mobile-toggle-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div id="drawer-overlay" class="drawer-overlay"></div>
+  <div id="mobile-drawer" class="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="brand-logo-icon">👑</span>
+        <span>AURELIA</span>
+      </div>
+      <button id="mobile-drawer-close" class="drawer-close-btn">✕</button>
+    </div>
+    <ul class="drawer-nav-list">
+      <li><a href="#home" class="drawer-nav-link" data-route="home"><span>🏠</span> Home</a></li>
+      <li><a href="#catalogue" class="drawer-nav-link" data-route="catalogue"><span>💎</span> Jewelry Catalogue</a></li>
+      <li><a href="#new-arrivals" class="drawer-nav-link" data-route="new-arrivals"><span>✨</span> New Arrivals</a></li>
+      <li><a href="#compare" class="drawer-nav-link" data-route="compare"><span>⚖️</span> Compare (<span class="compare-badge-count">0</span>)</a></li>
+      <li><a href="#about" class="drawer-nav-link" data-route="about"><span>🏛️</span> About Our Store</a></li>
+      <li><a href="#contact" class="drawer-nav-link" data-route="contact"><span>📍</span> Store Location & Contact</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+      <a id="drawer-wa-btn" href="https://wa.me/15558392847" target="_blank" rel="noopener" class="btn btn-whatsapp btn-md w-100">
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Dynamic Page Content Root -->
+  <main id="main-content"></main>
+
+  <!-- Floating WhatsApp Button -->
+  <a id="floating-whatsapp-btn" href="https://wa.me/15558392847" target="_blank" rel="noopener" class="floating-whatsapp" aria-label="Inquire on WhatsApp" title="Chat on WhatsApp">
+    💬
+  </a>
+
+  <!-- Sticky Mobile Action Bar (Fixed at bottom on mobile screens) -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-bar-content">
+      <a id="sticky-mobile-wa" href="https://wa.me/15558392847" target="_blank" rel="noopener" class="btn btn-whatsapp btn-md flex-1">
+        <span>💬 Ask on WhatsApp</span>
+      </a>
+      <a id="sticky-mobile-call" href="tel:+15558392847" class="btn btn-outline-gold btn-md">
+        📞 Call
+      </a>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <div class="brand-logo mb-3">
+          <span class="brand-logo-icon">👑</span>
+          <span>AURELIA FINE JEWELRY</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; line-height: 1.6;">
+          Your premier local offline jewelry showroom. Handcrafting authentic 22K gold, certified natural diamonds, and heirloom silver jewelry since 1988.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Digital Catalogue</h4>
+        <ul class="footer-links">
+          <li><a href="#catalogue?category=gold">22K Gold Collection</a></li>
+          <li><a href="#catalogue?category=rings">Diamond Solitaire Rings</a></li>
+          <li><a href="#catalogue?category=necklaces">Heritage Gold Necklaces</a></li>
+          <li><a href="#catalogue?category=bridal">Bridal & Wedding Sets</a></li>
+          <li><a href="#new-arrivals">New Arrivals Showcase</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Physical Store Visit</h4>
+        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 8px;">
+          📍 742 Royal Heritage Plaza, Diamond Market, Suite 102
+        </p>
+        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6; margin-bottom: 8px;">
+          📞 Phone: +1 (555) 839-2847
+        </p>
+        <p style="color: var(--text-gold); font-size: 0.85rem; font-weight: 600;">
+          🕒 Open Mon-Sat: 10:00 AM – 7:30 PM
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aurelia Fine Jewelry. All rights reserved. Digital Showroom & Catalogue.</p>
+    </div>
+  </footer>
+
+  <!-- Application Module Entry -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
